@@ -144,8 +144,8 @@ class _MyHomePageState extends State<MyHomePage>
     return Transform(
       transform: Matrix4.identity()
         ..setEntry(3, 2, 0.001)
-        ..rotateX(0.01 * _offset.dx)
-        ..rotateY(-0.01 * _offset.dy),
+        ..rotateX(_offset.dx)
+        ..rotateY(_offset.dy),
       alignment: FractionalOffset.center,
       child: Transform(
           transform: Matrix4.identity()
